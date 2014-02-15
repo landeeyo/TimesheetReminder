@@ -28,10 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.TSEventLog = new System.Diagnostics.EventLog();
+            ((System.ComponentModel.ISupportInitialize)(this.TSEventLog)).BeginInit();
+            // 
+            // TSReminder
+            // 
             this.ServiceName = "Service1";
+            ((System.ComponentModel.ISupportInitialize)(this.TSEventLog)).EndInit();
+
         }
 
         #endregion
+
+        public System.Diagnostics.EventLog TSEventLog;
+
+
     }
 }

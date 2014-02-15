@@ -20,3 +20,13 @@ TimesheetReminder/obj/x86/Release/TimesheetReminder.csproj.GenerateResource.Cach
 TimesheetReminder/obj/x86/Release/TimesheetReminder.exe
 TimesheetReminder/obj/x86/Release/TimesheetReminder.pdb
 TimesheetReminder/obj/x86/Release/TimesheetReminder.ProjectInstaller.resources
+TimesheetReminder/bin/Debug/InstallUtil.InstallLog
+TimesheetReminder/bin/Debug/TimesheetReminder.exe.config
+TimesheetReminder/bin/Debug/TimesheetReminder.InstallLog
+TimesheetReminder/bin/Debug/TimesheetReminder.InstallState
+TimesheetReminder/bin/Debug/TimesheetReminder.vshost.exe.config
+TimesheetReminder/bin/Release/TimesheetReminder.exe.config
+TimesheetReminder/obj/x86/Debug/TimesheetReminder.csproj.GenerateResource.Cache
+TimesheetReminder/obj/x86/Debug/TimesheetReminder.ProjectInstaller.resources
+TimesheetReminder/obj/x86/Debug/TimesheetReminder.TSReminder.resources
+TimesheetReminder/obj/x86/Release/TimesheetReminder.TSReminder.resources
