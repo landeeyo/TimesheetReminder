@@ -30,3 +30,5 @@ TimesheetReminder/obj/x86/Debug/TimesheetReminder.csproj.GenerateResource.Cache
 TimesheetReminder/obj/x86/Debug/TimesheetReminder.ProjectInstaller.resources
 TimesheetReminder/obj/x86/Debug/TimesheetReminder.TSReminder.resources
 TimesheetReminder/obj/x86/Release/TimesheetReminder.TSReminder.resources
+TimesheetReminder/obj/x86/Debug/DesignTimeResolveAssemblyReferences.cache
+TimesheetReminder/bin/Release/TimesheetReminder.vshost.exe.config

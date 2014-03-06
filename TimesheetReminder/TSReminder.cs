@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.Linq;
-using System.ServiceProcess;
-using System.Text;
+﻿using System.ServiceProcess;
 using TimesheetReminder.BLL;
-using System.Net.Mail;
 
 namespace TimesheetReminder
 {
@@ -16,7 +8,8 @@ namespace TimesheetReminder
         public TSReminder()
         {
             InitializeComponent();
-            if (Logging.IsLoggingEnabled)
+            Logger.Init(this);
+            if (Logger.IsLoggingEnabled)
             {
                 if (!System.Diagnostics.EventLog.SourceExists("TimesheetReminder"))
                 {
@@ -30,12 +23,13 @@ namespace TimesheetReminder
 
         protected override void OnStart(string[] args)
         {
-            Logging.Log(this, "TimesheetReminder service has been started.");
+            Logger.Log("TimesheetReminder service has been started.");
+            Mailer.StartMailer();
         }
 
         protected override void OnStop()
         {
-            Logging.Log(this,"TimesheetReminder service has been stopped.");
+            Logger.Log("TimesheetReminder service has been stopped.");
         }
     }
 }

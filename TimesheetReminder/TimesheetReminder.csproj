@@ -47,8 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\Logging.cs" />
-    <Compile Include="BLL\Mailing.cs" />
+    <Compile Include="BLL\IPhotoExtractor.cs" />
+    <Compile Include="BLL\Logger.cs" />
+    <Compile Include="BLL\Mailer.cs" />
+    <Compile Include="BLL\TumblrPhotoExtractor.cs" />
     <Compile Include="ProjectInstaller.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -73,7 +75,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
